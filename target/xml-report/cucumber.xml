@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.8">
+    <testcase classname="US0101 qualitydemy" name="kullanici basarili bir sekilde giris yapabilmeli" time="15.53">
+        <system-out>
+            <![CDATA[Given Kullanici qualitydemy sayfasina gider.................................passed
+When Email ve password bilgilerini girerek giris yapar......................passed
+Then Basarili bir sekilde giris yaptigini test eder.........................passed
+And Sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
