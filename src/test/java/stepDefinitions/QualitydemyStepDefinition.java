@@ -35,6 +35,8 @@ public class QualitydemyStepDefinition {
     @Then("Sayfayi kapatir")
     public void sayfayi_kapatir() {
       Driver.closeDriver();
+
+
     }
 
 }
