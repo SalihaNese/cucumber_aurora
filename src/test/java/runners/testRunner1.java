@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
 
         features = "src/test/resources/features", // feature dosyalarının nerde oldugunu gosteriri
         glue="stepDefinitions", //features'da yazdıgımız dosyalari gosterir
-        tags= "@demy",//work ın progres su anda uzerinde calistıgımıx dosyalar demek
+        tags= "@meyve",//work ın progres su anda uzerinde calistıgımıx dosyalar demek
         dryRun =false
 )
 
