@@ -3,13 +3,14 @@ package stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
-import pages.QualitydemyPage;
+import pages.QualityDemyPage;
+
 import utilites.ConfigReader;
 import utilites.Driver;
 
 public class QualityDemyUS0030StepDefinition {
 
-    QualitydemyPage demyPage = new QualitydemyPage();
+    QualityDemyPage demyPage = new QualityDemyPage();
     @Given("Launch browser Go to url")
     public void launch_browser_go_to_url() {
         Driver.getDriver().get(ConfigReader.getProperty("myUrl"));
@@ -60,6 +61,7 @@ public class QualityDemyUS0030StepDefinition {
     @Then("Click Outcomes from the row under the Course Add Form")
     public void click_outcomes_from_the_row_under_the_course_add_form() {
         demyPage.outComesButton.click();
+
 
 
     }

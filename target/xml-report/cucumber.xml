@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="30.674">
+    <testcase classname="US_0016 All History dropdown link on the Purchase History page is enabled test" name="TC_1602 Verification All History dropdown menu on Purchase History page" time="30.332">
+        <system-out>
+            <![CDATA[Given Open browser go to url "myUrl"........................................passed
+Then User clicks on the login link, enters "mailNese" and "passwordNese" and logs in..passed
+Then User clicks on dashboard link..........................................passed
+Then User clicks Purchase History section on dashbord page..................passed
+Then User clicks All History dropdown menu on Purchase History page.........passed
+Then User verifies All History option on All History dropdown menu is displayed.passed
+Then User verifies Pending Orders option on All History dropdown menu is displayed.passed
+Then User verifies Confirmed Orders option on All History dropdown menu is displayed.passed
+Then User verifies Completed Orders option on All History dropdown menu is displayed.passed
+Then User verifies Refused Cancelled Orders option on All History dropdown menu is displayed.passed
+And Closes the page.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

@@ -10,8 +10,8 @@ import utilites.Driver;
 public class AutomationExerciseStepDefinition {
  AutomationExercisePage page = new AutomationExercisePage();
     @Given("Kullanici {string} sayfasina gider")
-    public void kullanici_sayfasina_gider(String istenenUrl) {
-        Driver.getDriver().get(ConfigReader.getProperty(istenenUrl));
+    public void kullanici_sayfasina_gider(String Url) {
+        Driver.getDriver().get(ConfigReader.getProperty(Url));
       // Driver'a configrederdaki url'i getir diyoruz
     }
 
@@ -44,7 +44,8 @@ public class AutomationExerciseStepDefinition {
 
    @Then("Kullanici sayfaya giris yapilamadigini test eder")
    public void kullanici_sayfaya_giris_yapilamadigini_test_eder() {
-      Assert.assertTrue(page.loginButonu.isDisplayed());
+
+       Assert.assertTrue(page.loginButonu.isDisplayed());
    }
 
 
