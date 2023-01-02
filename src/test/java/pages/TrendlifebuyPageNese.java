@@ -1,5 +1,6 @@
 package pages;
 
+import io.cucumber.java.zh_cn.假如;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -50,6 +51,50 @@ public class TrendlifebuyPageNese {
 
   @FindBy(xpath = "//li[text()='Refused/Cancelled Orders']")
     public WebElement refusedCancelledOrdersButton;
+
+  @FindBy(xpath = "(//button[@class='amazy_status_btn purchase_show'])[1]")
+    public WebElement orderSummaryButton;
+
+  @FindBy(xpath = "(//a[@class='amazy_status_btn'])[1]")
+    public WebElement downloadOrderInvoice;
+
+
+  // +++++++++++++++++++++17 ++++++++++++++++++
+
+
+
+    @FindBy(xpath = "(//a[@class='position-relative d-flex align-items-center'])[3]")
+    public WebElement myOrderButton;
+
+
+
+    @FindBy(xpath = "//button[@id='home-tab']")
+    public WebElement myOrderAllButton;
+
+    @FindBy(xpath = "//button[@id='Pay-tab']")
+    public WebElement myOrderToPayButton;
+
+    @FindBy(xpath = "//button[@id='Ship-tab']")
+    public WebElement myOrderToShipButton;
+
+    @FindBy(xpath = "//button[@id='Receive-tab']")
+    public WebElement myOrderToReceiveButton;
+
+   @FindBy(xpath = "(//div[@class='d-flex align-items-center flex-wrap gap_5'])[1]")
+    public WebElement orderIdButton;
+
+   @FindBy(xpath = "(//h4[@class='font_14 f_w_500 m-0 lh-base'])[2]")
+    public WebElement orderDateButton;
+
+   @FindBy(xpath = "(//h4[@class='font_14 f_w_500 m-0 lh-base'])[3] ")
+    public WebElement statusButton;
+
+   @FindBy(xpath = "(//h4[@class='font_14 f_w_500 m-0 lh-base'])[4] ")
+    public WebElement orderAmountButton;
+
+   @FindBy(xpath = "(//h4[@class='font_14 f_w_500 m-0 lh-base'])[5] ")
+    public WebElement paidByButton;
+
 
 
 

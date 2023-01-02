@@ -1,4 +1,6 @@
 
+@us1603
+
   Feature: US_0016 Buttons on the Action column on the Purchase History page is enabled test
 
     Scenario: TC_1603 Verification the order summaries and the order invoice from
