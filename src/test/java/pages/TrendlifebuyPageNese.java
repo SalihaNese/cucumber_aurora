@@ -95,6 +95,30 @@ public class TrendlifebuyPageNese {
    @FindBy(xpath = "(//h4[@class='font_14 f_w_500 m-0 lh-base'])[5] ")
     public WebElement paidByButton;
 
+   @FindBy(xpath = "(//span[@class='current'])[1]")
+   public WebElement numbersDropDownMenu;
+
+
+   @FindBy(xpath = "//span[text()='Last 5 orders']")
+    public WebElement lastFiveOrdersButton;
+
+   //@FindBy(xpath = "//span[text()='Last 10 orders']")
+   @FindBy(xpath = "(//li[@class='option'])[1]")
+    public WebElement lastTenOrdersButton;
+
+   @FindBy(xpath = "//li[@data-value='20']")
+    public WebElement lastTwentyOrdersButton;
+
+   @FindBy(xpath = "//li[@data-value='40']")
+    public WebElement lastFourtyOrdersButton;
+
+
+
+
+
+
+
+
 
 
 

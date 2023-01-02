@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="34.725">
-    <testcase classname="US_0017 My Order page visibility test on Dashboard page" name="TC_1701 Filtering the orders on My Order page" time="34.38">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="57.827">
+    <testcase classname="US_0017 My Order page visibility test on Dashboard page" name="TC_1704 Verification of the number of products on the order page" time="57.117">
         <system-out>
             <![CDATA[Given Open browser go to url "myUrl"........................................passed
 Then User clicks on the login link, enters "mailNese" and "passwordNese" and logs in..passed
 Then User clicks on dashboard link..........................................passed
 Then User clicks My Order section on dashbord page..........................passed
-Then User verifies that Order ID is displayed...............................passed
-Then User verifies that Status is displayed.................................passed
-Then User verifies that Order date is displayed.............................passed
-Then User verifies that Order Amount is displayed...........................passed
-Then User verifies that Paid By is displayed................................passed
-And Closes the page.........................................................passed
+Then User verifies that all the options of the dropdown menu of the number of products can be determined.passed
+Then Closes the page........................................................passed
 ]]>
         </system-out>
     </testcase>

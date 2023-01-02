@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import io.cucumber.java.en.Then;
+import org.checkerframework.checker.units.qual.A;
 import org.checkerframework.checker.units.qual.K;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -141,4 +142,29 @@ public class TrendlifeBuyStepDefinitionNese {
 
     }
 
+    @Then("User verifies that all the options of the dropdown menu of the number of products can be determined")
+    public void userVerifiesThatAllTheOptionsOfTheDropdownMenuOfTheNumberOfProductsCanBeDetermined() {
+
+
+        trendlife.numbersDropDownMenu.click();
+        ReusableMethods.bekle(2);
+        Assert.assertTrue(trendlife.lastFiveOrdersButton.isDisplayed());
+        Assert.assertTrue(trendlife.lastTenOrdersButton.isDisplayed());
+
+        ReusableMethods.bekle(2);
+        trendlife.lastTenOrdersButton.click();
+
+        trendlife.numbersDropDownMenu.click();
+        Assert.assertTrue(trendlife.lastTwentyOrdersButton.isDisplayed());
+        trendlife.lastTwentyOrdersButton.click();
+
+        ReusableMethods.bekle(1);
+
+
+
+        trendlife.numbersDropDownMenu.click();
+        Assert.assertTrue(trendlife.lastFourtyOrdersButton.isDisplayed());
+        trendlife.lastFourtyOrdersButton.click();
+
+    }
 }
