@@ -66,8 +66,6 @@ public class TrendlifebuyPageNese {
     @FindBy(xpath = "(//a[@class='position-relative d-flex align-items-center'])[3]")
     public WebElement myOrderButton;
 
-
-
     @FindBy(xpath = "//button[@id='home-tab']")
     public WebElement myOrderAllButton;
 
@@ -80,26 +78,26 @@ public class TrendlifebuyPageNese {
     @FindBy(xpath = "//button[@id='Receive-tab']")
     public WebElement myOrderToReceiveButton;
 
-   @FindBy(xpath = "(//div[@class='d-flex align-items-center flex-wrap gap_5'])[1]")
+    @FindBy(xpath = "(//div[@class='d-flex align-items-center flex-wrap gap_5'])[1]")
     public WebElement orderIdButton;
 
-   @FindBy(xpath = "(//h4[@class='font_14 f_w_500 m-0 lh-base'])[2]")
+    @FindBy(xpath = "(//h4[@class='font_14 f_w_500 m-0 lh-base'])[2]")
     public WebElement orderDateButton;
 
-   @FindBy(xpath = "(//h4[@class='font_14 f_w_500 m-0 lh-base'])[3] ")
+    @FindBy(xpath = "(//h4[@class='font_14 f_w_500 m-0 lh-base'])[3] ")
     public WebElement statusButton;
 
-   @FindBy(xpath = "(//h4[@class='font_14 f_w_500 m-0 lh-base'])[4] ")
+    @FindBy(xpath = "(//h4[@class='font_14 f_w_500 m-0 lh-base'])[4] ")
     public WebElement orderAmountButton;
 
-   @FindBy(xpath = "(//h4[@class='font_14 f_w_500 m-0 lh-base'])[5] ")
+    @FindBy(xpath = "(//h4[@class='font_14 f_w_500 m-0 lh-base'])[5] ")
     public WebElement paidByButton;
 
-   @FindBy(xpath = "(//span[@class='current'])[1]")
+    @FindBy(xpath = "(//span[@class='current'])[1]")
    public WebElement numbersDropDownMenu;
 
 
-   @FindBy(xpath = "//span[text()='Last 5 orders']")
+    @FindBy(xpath = "//span[text()='Last 5 orders']")
     public WebElement lastFiveOrdersButton;
 
    //@FindBy(xpath = "//span[text()='Last 10 orders']")
@@ -112,8 +110,34 @@ public class TrendlifebuyPageNese {
    @FindBy(xpath = "//li[@data-value='40']")
     public WebElement lastFourtyOrdersButton;
 
+ //  @FindBy(xpath = "(//*[text()='Prev'])[1]")
+    @FindBy(xpath = "(//span[text()='Prev'])[1]")
+    public WebElement previousButton;
+
+//   @FindBy(xpath = "(//*[text()='Next'])[1]")
+  @FindBy(xpath = "(//span[text()='Next'])[1]")
+    public WebElement nextButton;
 
 
+  //++++++++++++++++++ US42 ++++++++++++++++
+
+    @FindBy(xpath = "//button[@id='sign_in_btn']")
+    public WebElement adminSignInButton;
+
+    @FindBy(xpath = "//*[text()='Admin Reports']")
+    public WebElement adminReportsButton;
+
+    @FindBy(xpath = "/*[text()='Product stock']")
+    public WebElement productStockButton;
+
+    @FindBy(xpath = "//label[@class='primary_input_label']")
+    public WebElement typeButton;
+
+    @FindBy(xpath = "//li[@class='option']")
+    public WebElement selectOneOption;
+
+    @FindBy(xpath = "//li[@data-value='all']")
+    public WebElement allProductList;
 
 
 

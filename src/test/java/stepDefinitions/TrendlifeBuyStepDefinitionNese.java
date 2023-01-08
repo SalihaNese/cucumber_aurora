@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.checkerframework.checker.units.qual.A;
 import org.checkerframework.checker.units.qual.K;
@@ -95,7 +96,7 @@ public class TrendlifeBuyStepDefinitionNese {
         actions.sendKeys(Keys.ARROW_DOWN).perform();
 
 
-        ReusableMethods.bekle(4);
+        ReusableMethods.bekle(2);
        trendlife.myOrderButton.click();
       //  actions.sendKeys(Keys.END).perform();
         ReusableMethods.bekle(2);
@@ -160,11 +161,60 @@ public class TrendlifeBuyStepDefinitionNese {
 
         ReusableMethods.bekle(1);
 
-
-
         trendlife.numbersDropDownMenu.click();
         Assert.assertTrue(trendlife.lastFourtyOrdersButton.isDisplayed());
         trendlife.lastFourtyOrdersButton.click();
+    }
+
+    @Then("User goes to bottom of the page")
+    public void user_goes_to_bottom_of_the_page() {
+        ReusableMethods.bekle(2);
+        actions.sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN).perform();
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
 
     }
+    @Then("User clicks next and or previous buttons")
+    public void user_clicks_next_and_or_previous_buttons() {
+        ReusableMethods.bekle(2);
+        trendlife.nextButton.click();
+        Assert.assertTrue(trendlife.nextButton.isDisplayed());
+        ReusableMethods.bekle(2);
+        Driver.getDriver().navigate().back();
+        trendlife.previousButton.click();
+
+    }
+
+    @Given("Open browser go to url {string}.")
+    public void openBrowserGoToUrl(String admin) {
+        Driver.getDriver().get(ConfigReader.getProperty(admin));
+    }
+
+    @Then("Admin enters an {string}, a {string}, then clicks sign in link on admin page to login")
+    public void admin_enters_an_a_then_clicks_sign_in_link_on_admin_page_to_login(String mail, String password) {
+       //trendlife.loginLink.click();
+
+       trendlife.emailBox.sendKeys(ConfigReader.getProperty(mail));
+       trendlife.passwordBox.sendKeys(ConfigReader.getProperty(password));
+        actions.sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.PAGE_DOWN).sendKeys(Keys.ARROW_DOWN).perform();
+        ReusableMethods.bekle(2);
+        trendlife.signInButton.click();
+    }
+    @Then("Admin clicks Admin Reports section from sidebar menu on dashboard page")
+    public void admin_clicks_admin_reports_section_from_sidebar_menu_on_dashboard_page() {
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        trendlife.adminReportsButton.click();
+    }
+    @Then("Admin clicks Product stock section")
+    public void admin_clicks_product_stock_section() {
+
+    }
+    @Then("Admin verifies that Type can be selected")
+    public void admin_verifies_that_type_can_be_selected() {
+        // Write code here that turns the phrase above into concrete actions
+        throw new io.cucumber.java.PendingException();
+    }
+
+
 }

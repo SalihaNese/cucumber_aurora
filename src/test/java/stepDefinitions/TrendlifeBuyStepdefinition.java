@@ -16,8 +16,8 @@ public class TrendlifeBuyStepdefinition {
         Actions actions=new Actions(Driver.getDriver());
 
         @Given("Open browser go to url {string}")
-        public void open_browser_go_to_url(String url) {
-            Driver.getDriver().get(ConfigReader.getProperty(url)); // Bu dinamik olan
+        public void open_browser_go_to_url(String Url) {
+            Driver.getDriver().get(ConfigReader.getProperty(Url)); // Bu dinamik olan
             //  Driver.getDriver().get(ConfigReader.getProperty("myUrl2"));
         }
         @Then("User clicks on the login link, enters {string} and {string} and logs in.")
