@@ -232,10 +232,44 @@ public class TrendlifeBuyStepDefinitionNese {
     Assert.assertTrue(trendlife.selectOneOption.isEnabled());
     trendlife.selectOneOption.click();
 
-
-
-
     }
 
+    @Then("Admin clicks Type dropdown menu")
+    public void admin_clicks_type_dropdown_menu() {
+     trendlife.typedropDownMenu.click();
+
+    }
+    @Then("Admin verifies that Select One is selectable")
+    public void admin_verifies_that_select_one_is_selectable() {
+        trendlife.selectOneOption.click();
+        Assert.assertTrue(trendlife.selectOneOption.isEnabled());
+        ReusableMethods.bekle(3);
+    }
+    @Then("Admin verifies that All Product List is selectable")
+    public void admin_verifies_that_all_product_list_is_selectable() {
+        ReusableMethods.bekle(3);
+        trendlife.typedropDownMenu.click();
+        trendlife.allProductList.click();
+        Assert.assertTrue(trendlife.allProductList.isEnabled());
+    }
+
+
+
+    @Then("Admin clicks Select One")
+    public void admin_clicks_select_one() {
+
+    }
+    @Then("Admin clicks Search button")
+    public void admin_clicks_search_button() {
+
+    }
+    @Then("Admin verifies that the stock list of the selected products is displayed")
+    public void admin_verifies_that_the_stock_list_of_the_selected_products_is_displayed() {
+
+    }
+    @Then("Admin clicks All Product List button")
+    public void admin_clicks_all_product_list_button() {
+
+    }
 
 }

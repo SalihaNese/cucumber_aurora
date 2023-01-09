@@ -137,7 +137,8 @@ public class TrendlifebuyPageNese {
     @FindBy(xpath = "(//div[@tabindex='0'])[2]")
     public WebElement typedropDownMenu;
 
-    @FindBy(xpath = "//li[@class='option']")
+    //@FindBy(xpath = "//li[@class='option']")
+    @FindBy(xpath = "(//span[@class='current'])[2]")
     public WebElement selectOneOption;
 
     @FindBy(xpath = "//li[@data-value='all']")
