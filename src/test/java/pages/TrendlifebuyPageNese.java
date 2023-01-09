@@ -138,11 +138,20 @@ public class TrendlifebuyPageNese {
     public WebElement typedropDownMenu;
 
     //@FindBy(xpath = "//li[@class='option']")
-    @FindBy(xpath = "(//span[@class='current'])[2]")
+   // @FindBy(xpath = "(//span[@class='current'])[2]")
+    @FindBy(xpath = "//li[@class='option selected focus']")
     public WebElement selectOneOption;
+
 
     @FindBy(xpath = "//li[@data-value='all']")
     public WebElement allProductList;
+
+   // @FindBy(xpath = "//li[@class='option']")
+    //public WebElement allProductList2;
+
+   // @FindBy(xpath = "(//button[@type='submit'])[2]")
+    @FindBy(xpath = "//button[@id='save_button_parent']")
+    public WebElement searchButton;
 
 
 

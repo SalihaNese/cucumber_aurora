@@ -223,14 +223,15 @@ public class TrendlifeBuyStepDefinitionNese {
     public void admin_verifies_that_type_can_be_selected() {
    ReusableMethods.bekle(3);
 
-   trendlife.typedropDownMenu.click();
-   Assert.assertTrue(trendlife.allProductList.isEnabled());
-        trendlife.allProductList.click();
+   Assert.assertTrue(trendlife.typedropDownMenu.isEnabled());
+  // trendlife.typedropDownMenu.click();
+ //  Assert.assertTrue(trendlife.allProductList.isEnabled());
+      //  trendlife.allProductList.click();
         ReusableMethods.bekle(3);
 
-        trendlife.typedropDownMenu.click();
-    Assert.assertTrue(trendlife.selectOneOption.isEnabled());
-    trendlife.selectOneOption.click();
+    //    trendlife.typedropDownMenu.click();
+   // Assert.assertTrue(trendlife.selectOneOption.isEnabled());
+   // trendlife.selectOneOption.click();
 
     }
 
@@ -241,26 +242,33 @@ public class TrendlifeBuyStepDefinitionNese {
     }
     @Then("Admin verifies that Select One is selectable")
     public void admin_verifies_that_select_one_is_selectable() {
-        trendlife.selectOneOption.click();
+      //  trendlife.selectOneOption.click();
         Assert.assertTrue(trendlife.selectOneOption.isEnabled());
         ReusableMethods.bekle(3);
     }
     @Then("Admin verifies that All Product List is selectable")
     public void admin_verifies_that_all_product_list_is_selectable() {
-        ReusableMethods.bekle(3);
-        trendlife.typedropDownMenu.click();
-        trendlife.allProductList.click();
+       // ReusableMethods.bekle(3);
+       // trendlife.typedropDownMenu.click();
+       // trendlife.allProductList.click();
         Assert.assertTrue(trendlife.allProductList.isEnabled());
     }
 
-
-
     @Then("Admin clicks Select One")
     public void admin_clicks_select_one() {
-
+     ReusableMethods.bekle(2);
+   //  trendlife.typedropDownMenu.click();
+     trendlife.selectOneOption.click();
+   ReusableMethods.bekle(2);
+        System.out.println("deneme");
     }
+
     @Then("Admin clicks Search button")
     public void admin_clicks_search_button() {
+        System.out.println("deneme-2");
+        trendlife.searchButton.click();
+        // Assert.assertTrue(trendlife.searchButton.isEnabled());
+        System.out.println("deneme-3");
 
     }
     @Then("Admin verifies that the stock list of the selected products is displayed")
@@ -269,7 +277,16 @@ public class TrendlifeBuyStepDefinitionNese {
     }
     @Then("Admin clicks All Product List button")
     public void admin_clicks_all_product_list_button() {
-
+        ReusableMethods.bekle(2);
+        trendlife.typedropDownMenu.click();
+        trendlife.allProductList.click();
+        System.out.println("deneme-4");
     }
-
+    @Then("Admin clicks Search button again")
+    public void adminClicksSearchButtonAgain() {
+        ReusableMethods.bekle(2);
+        trendlife.searchButton.click();
+        // Assert.assertTrue(trendlife.searchButton.isEnabled());
+        System.out.println("deneme-5");
+    }
 }

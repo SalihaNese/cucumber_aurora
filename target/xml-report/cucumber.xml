@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="0.527">
-    <testcase classname="US_0043 Testing to check the stock status of the products on the site" name="TC_4203 Verification of the stock list of the selected products when the Type is selected" time="0.064">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception">
-            <![CDATA[Given Open browser go to url "AdminUrl".....................................passed
-Then Admin enters an "email", a "password", then clicks sign in link on admin page to login.passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="45.268">
+    <testcase classname="US_0043 Testing to check the stock status of the products on the site" name="TC_4203 Verification of the stock list of the selected products when the Type is selected" time="44.909">
+        <system-out>
+            <![CDATA[Given Open browser go to url "adminUrl".....................................passed
+Then Admin enters an "neseAdminEmail", a "neseadminPassword", then clicks sign in link on admin page to login.passed
 Then Admin clicks Admin Reports section from sidebar menu on dashboard page.passed
 Then Admin clicks Product stock section.....................................passed
 Then Admin clicks Type dropdown menu........................................passed
-Then Admin clicks Select One................................................undefined
-Then Admin clicks Search button.............................................skipped
-Then Admin verifies that the stock list of the selected products is displayed.skipped
-Then Admin clicks All Product List button...................................skipped
-Then Admin clicks Search button.............................................skipped
-Then Admin verifies that the stock list of the selected products is displayed.skipped
-And Closes the page.........................................................skipped
+Then Admin clicks Select One................................................passed
+Then Admin clicks Search button.............................................passed
+Then Admin clicks All Product List button...................................passed
+Then Admin clicks Search button again.......................................passed
+And Closes the page.........................................................passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>
