@@ -183,6 +183,7 @@ public class TrendlifeBuyStepDefinitionNese {
         trendlife.previousButton.click();
 
     }
+    // ^^^^^^^^^^^42 ^^^^^^^^^^
 
     @Given("Open browser go to url {string}.")
     public void openBrowserGoToUrl(String admin) {
@@ -204,16 +205,36 @@ public class TrendlifeBuyStepDefinitionNese {
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         actions.sendKeys(Keys.PAGE_DOWN).perform();
         actions.sendKeys(Keys.PAGE_DOWN).perform();
-        trendlife.adminReportsButton.click();
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        actions.moveToElement(trendlife.adminReportsButton).click().perform();
+
     }
     @Then("Admin clicks Product stock section")
     public void admin_clicks_product_stock_section() {
-
+        ReusableMethods.bekle(2);
+        actions.sendKeys(Keys.PAGE_DOWN).perform();
+        actions.sendKeys(Keys.ARROW_DOWN).perform();
+        actions.moveToElement(trendlife.productStockButton).click().perform();
+        Assert.assertTrue(trendlife.productStockButton.isDisplayed());
+    trendlife.productStockButton.click();
     }
     @Then("Admin verifies that Type can be selected")
     public void admin_verifies_that_type_can_be_selected() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+   ReusableMethods.bekle(3);
+
+   trendlife.typedropDownMenu.click();
+   Assert.assertTrue(trendlife.allProductList.isEnabled());
+        trendlife.allProductList.click();
+        ReusableMethods.bekle(3);
+
+        trendlife.typedropDownMenu.click();
+    Assert.assertTrue(trendlife.selectOneOption.isEnabled());
+    trendlife.selectOneOption.click();
+
+
+
+
     }
 
 

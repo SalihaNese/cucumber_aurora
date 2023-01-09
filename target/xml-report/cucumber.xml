@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="17.481">
-    <testcase classname="US_0042 Testing to check the stock status of the products on the site" name="TC_4201 Verification of  the Type  on product stock" time="16.779">
-        <failure message="The scenario has pending or undefined step(s)" type="io.cucumber.java.PendingException">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="49.966">
+    <testcase classname="US_0042 Testing to check the stock status of the products on the site" name="TC_4201 Verification of  the Type  on product stock" time="49.585">
+        <system-out>
             <![CDATA[Given Open browser go to url "adminUrl".....................................passed
 Then Admin enters an "neseAdminEmail", a "neseadminPassword", then clicks sign in link on admin page to login.passed
 Then Admin clicks Admin Reports section from sidebar menu on dashboard page.passed
 Then Admin clicks Product stock section.....................................passed
-Then Admin verifies that Type can be selected...............................pending
-Then Closes the page........................................................skipped
+Then Admin verifies that Type can be selected...............................passed
+Then Closes the page........................................................passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>
