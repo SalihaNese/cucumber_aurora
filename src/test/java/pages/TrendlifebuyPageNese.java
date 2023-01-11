@@ -127,7 +127,6 @@ public class TrendlifebuyPageNese {
     @FindBy(xpath = "//*[text()='Admin Reports']")
     public WebElement adminReportsButton;
 
-    //@FindBy(xpath = "/*[text()='Product stock']")
     @FindBy(xpath = "//a[text()='Product stock']")
     public WebElement productStockButton;
 
@@ -152,12 +151,6 @@ public class TrendlifebuyPageNese {
    // @FindBy(xpath = "(//button[@type='submit'])[2]")
     @FindBy(xpath = "//button[@id='save_button_parent']")
     public WebElement searchButton;
-
-
-
-
-
-
 
 
 }
